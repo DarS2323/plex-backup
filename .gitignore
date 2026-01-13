@@ -1,0 +1,47 @@
+# ===========================================================================
+# Plex Backup .gitignore
+# ===========================================================================
+# Prevents backup files and logs from being committed to version control
+# Only scripts and documentation should be in git
+# ===========================================================================
+
+# Backup files (NEVER commit actual backups!)
+*.tar.gz
+*.tar
+*.zip
+*.bak
+*.backup
+plex_backup_*.tar.gz
+
+# Log files
+*.log
+logs/
+backup.log
+launchd.log
+launchd_error.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Test/development files
+test_backup/
+*.test
+
+# Any actual backup destination directories
+backups/
+backup_data/
